@@ -40,82 +40,131 @@
 
 
 </head>
-<body class="bg-white text-luxuryBlack">
+<body class="bg-white text-luxuryBlack font-sans">
 
+  <!-- NAVBAR -->
+  <header class="fixed w-full z-50 bg-white/90 backdrop-blur border-b border-gray-200">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-extrabold tracking-wide">
+        <span class="text-neonPink">FAB</span>
+        <span class="text-neonBlue">FITNESS</span>
+      </h1>
+      <a href="#contact" class="px-5 py-2 rounded-full bg-neonPink text-white font-semibold hover:bg-neonBlue transition">
+        Join Gym
+      </a>
+    </div>
+  </header>
 
-  <!-- HERO SECTION -->
-  <section class="min-h-screen flex flex-col items-center justify-center text-center px-6 bg-white">
-    <h1 class="text-5xl md:text-6xl font-extrabold tracking-tight">
-      Fab <span class="text-neonPink">Fitness</span>
-    </h1>
-
-    <p class="mt-4 text-lg md:text-xl max-w-2xl">
-      A premium, friendly, and energetic fitness space designed to help you
-      transform your body and elevate your lifestyle.
-    </p>
-
-    <a href="#contact"
-       class="mt-8 inline-block px-10 py-4 rounded-full bg-neonPink text-white font-semibold text-lg hover:scale-105 transition">
-      Join Gym
-    </a>
+  <!-- HERO -->
+  <section class="pt-32 pb-24 bg-gradient-to-br from-white to-gray-100">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <h2 class="text-5xl font-extrabold leading-tight mb-6">
+          Train Strong.<br>
+          Feel Confident.<br>
+          <span class="text-neonPink text-glow-pink">Live Fit.</span>
+        </h2>
+        <p class="text-lg text-gray-600 mb-8">
+          Fab Fitness is a premium yet welcoming gym in Varanasi designed for
+          strength, movement, energy, and confidence — for everyone.
+        </p>
+        <a href="#contact" class="inline-block px-8 py-4 rounded-full bg-neonBlue text-white font-bold hover:bg-neonPink transition">
+          Join the Gym
+        </a>
+      </div>
+      <div class="animate-float">
+        <img src="https://images.unsplash.com/photo-1599058917212-d750089bc07b"
+             alt="Gym Training"
+             class="rounded-3xl shadow-2xl">
+      </div>
+    </div>
   </section>
 
-  <!-- ABOUT SECTION -->
-  <section class="py-20 px-6 max-w-6xl mx-auto">
-    <h2 class="text-4xl font-bold text-center mb-6">About Fab Fitness</h2>
-    <p class="text-center max-w-3xl mx-auto text-lg">
-      Fab Fitness was created to be an accessible and vibrant place where anyone
-      can work out with confidence. We combine premium facilities with a welcoming
-      environment to make fitness enjoyable and sustainable.
-    </p>
+  <!-- STORY -->
+  <section class="py-24 bg-white">
+    <div class="max-w-5xl mx-auto px-6 text-center">
+      <h3 class="text-4xl font-bold mb-6">Our Story</h3>
+      <p class="text-gray-600 text-lg">
+        Fab Fitness was built with one purpose — to create an accessible,
+        vibrant, and motivating space where people of all fitness levels feel
+        comfortable, supported, and inspired to move every day.
+      </p>
+    </div>
   </section>
 
   <!-- SERVICES -->
-  <section class="py-20 bg-gray-50 px-6">
-    <h2 class="text-4xl font-bold text-center mb-12">Our Programs</h2>
-
-    <div class="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-6xl mx-auto">
-      <div class="p-6 bg-white rounded-xl shadow">
-        <h3 class="font-semibold text-xl mb-2">Weight Training</h3>
-        <p>Build strength, muscle, and confidence with modern equipment.</p>
+  <section class="py-24 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-6">
+      <h3 class="text-4xl font-bold text-center mb-16">Programs We Offer</h3>
+      <div class="grid md:grid-cols-4 gap-8">
+        <div class="p-8 bg-white rounded-3xl shadow hover:shadow-xl transition">
+          <h4 class="text-xl font-bold mb-3">Weight Training</h4>
+          <p class="text-gray-600">Build strength with modern equipment and structured routines.</p>
+        </div>
+        <div class="p-8 bg-white rounded-3xl shadow hover:shadow-xl transition">
+          <h4 class="text-xl font-bold mb-3">Yoga</h4>
+          <p class="text-gray-600">Improve flexibility, balance, and mental calm.</p>
+        </div>
+        <div class="p-8 bg-white rounded-3xl shadow hover:shadow-xl transition">
+          <h4 class="text-xl font-bold mb-3">Zumba</h4>
+          <p class="text-gray-600">High-energy dance workouts that make fitness fun.</p>
+        </div>
+        <div class="p-8 bg-white rounded-3xl shadow hover:shadow-xl transition">
+          <h4 class="text-xl font-bold mb-3">Personal Training</h4>
+          <p class="text-gray-600">Personalized coaching to help you reach your goals faster.</p>
+        </div>
       </div>
+    </div>
+  </section>
 
-      <div class="p-6 bg-white rounded-xl shadow">
-        <h3 class="font-semibold text-xl mb-2">Yoga</h3>
-        <p>Improve flexibility, balance, and mental well-being.</p>
-      </div>
-
-      <div class="p-6 bg-white rounded-xl shadow">
-        <h3 class="font-semibold text-xl mb-2">Zumba</h3>
-        <p>High-energy dance workouts for fun and effective cardio.</p>
-      </div>
-
-      <div class="p-6 bg-white rounded-xl shadow">
-        <h3 class="font-semibold text-xl mb-2">Personal Training</h3>
-        <p>Customized one-on-one programs for faster results.</p>
+  <!-- TESTIMONIALS -->
+  <section class="py-24 bg-white">
+    <div class="max-w-6xl mx-auto px-6">
+      <h3 class="text-4xl font-bold text-center mb-16">What Members Say</h3>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="p-8 border rounded-3xl">
+          <p class="text-gray-600 mb-4">
+            “The vibe here is unmatched. I finally enjoy coming to the gym.”
+          </p>
+          <span class="font-bold">— Ananya S.</span>
+        </div>
+        <div class="p-8 border rounded-3xl">
+          <p class="text-gray-600 mb-4">
+            “Premium feel, friendly people, and great workouts.”
+          </p>
+          <span class="font-bold">— Rohit K.</span>
+        </div>
+        <div class="p-8 border rounded-3xl">
+          <p class="text-gray-600 mb-4">
+            “Fab Fitness helped me build confidence, not just muscles.”
+          </p>
+          <span class="font-bold">— Neha M.</span>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- CONTACT -->
-  <section id="contact" class="py-20 px-6 max-w-4xl mx-auto text-center">
-    <h2 class="text-4xl font-bold mb-6">Join Fab Fitness</h2>
-    <p class="mb-8 text-lg">
-      Visit us in Susuwahi, Varanasi or get in touch to start your fitness journey.
-    </p>
+  <section id="contact" class="py-24 bg-luxuryBlack text-white">
+    <div class="max-w-5xl mx-auto px-6 text-center">
+      <h3 class="text-4xl font-bold mb-6">Get in Touch</h3>
+      <p class="mb-6">Susuwahi, Varanasi, India</p>
+      <p class="mb-2">📞 +91 98XXXXXX44</p>
+      <p class="mb-10">✉️ fabfitness@gmail.com</p>
 
-    <p class="font-semibold">📍 Susuwahi, Varanasi, India</p>
-    <p class="mt-2">📞 +91 98XXXXXX44</p>
-    <p class="mt-2">✉️ fabfitness@gmail.com</p>
-
-    <a href="https://wa.me/9198XXXXXX44"
-       class="inline-block mt-6 px-8 py-3 bg-neonBlue text-white rounded-full font-semibold">
-      Chat on WhatsApp
-    </a>
+      <iframe
+        class="w-full h-80 rounded-3xl"
+        src="https://www.google.com/maps?q=Susuwahi%20Varanasi&output=embed"
+        loading="lazy">
+      </iframe>
+    </div>
   </section>
 
-
-
+  <!-- FOOTER -->
+  <footer class="py-6 bg-black text-center text-gray-400 text-sm">
+    © Fab Fitness — Luxury Fitness for Everyone
+  </footer>
 
 </body>
+
 </html>
