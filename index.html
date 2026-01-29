@@ -1,9 +1,121 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Fab Fitness Test</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fab Fitness | Where Fitness Meets Confidence</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              neonPink: '#ff007f',
+              neonBlue: '#00f2ff',
+              gold: '#d4af37',
+              luxuryBlack: '#0a0a0a'
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              serif: ['Playfair Display', 'serif']
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      @keyframes float {
+        0% { transform: translateY(0px); }
+        50% { transform: translateY(-10px); }
+        100% { transform: translateY(0px); }
+      }
+      .animate-float { animation: float 3s ease-in-out infinite; }
+      .text-glow-pink { text-shadow: 0 0 10px rgba(255, 0, 127, 0.5); }
+      .text-glow-blue { text-shadow: 0 0 10px rgba(0, 242, 255, 0.5); }
+      .border-glow-gold { border-color: #d4af37; box-shadow: 0 0 15px rgba(212, 175, 55, 0.3); }
+      html { scroll-behavior: smooth; }
+    </style>
+
+
 </head>
-<body>
-  <h1>Fab Fitness Works</h1>
+<body class="bg-white text-luxuryBlack">
+
+
+  <!-- HERO SECTION -->
+  <section class="min-h-screen flex flex-col items-center justify-center text-center px-6 bg-white">
+    <h1 class="text-5xl md:text-6xl font-extrabold tracking-tight">
+      Fab <span class="text-neonPink">Fitness</span>
+    </h1>
+
+    <p class="mt-4 text-lg md:text-xl max-w-2xl">
+      A premium, friendly, and energetic fitness space designed to help you
+      transform your body and elevate your lifestyle.
+    </p>
+
+    <a href="#contact"
+       class="mt-8 inline-block px-10 py-4 rounded-full bg-neonPink text-white font-semibold text-lg hover:scale-105 transition">
+      Join Gym
+    </a>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section class="py-20 px-6 max-w-6xl mx-auto">
+    <h2 class="text-4xl font-bold text-center mb-6">About Fab Fitness</h2>
+    <p class="text-center max-w-3xl mx-auto text-lg">
+      Fab Fitness was created to be an accessible and vibrant place where anyone
+      can work out with confidence. We combine premium facilities with a welcoming
+      environment to make fitness enjoyable and sustainable.
+    </p>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="py-20 bg-gray-50 px-6">
+    <h2 class="text-4xl font-bold text-center mb-12">Our Programs</h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-6xl mx-auto">
+      <div class="p-6 bg-white rounded-xl shadow">
+        <h3 class="font-semibold text-xl mb-2">Weight Training</h3>
+        <p>Build strength, muscle, and confidence with modern equipment.</p>
+      </div>
+
+      <div class="p-6 bg-white rounded-xl shadow">
+        <h3 class="font-semibold text-xl mb-2">Yoga</h3>
+        <p>Improve flexibility, balance, and mental well-being.</p>
+      </div>
+
+      <div class="p-6 bg-white rounded-xl shadow">
+        <h3 class="font-semibold text-xl mb-2">Zumba</h3>
+        <p>High-energy dance workouts for fun and effective cardio.</p>
+      </div>
+
+      <div class="p-6 bg-white rounded-xl shadow">
+        <h3 class="font-semibold text-xl mb-2">Personal Training</h3>
+        <p>Customized one-on-one programs for faster results.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="py-20 px-6 max-w-4xl mx-auto text-center">
+    <h2 class="text-4xl font-bold mb-6">Join Fab Fitness</h2>
+    <p class="mb-8 text-lg">
+      Visit us in Susuwahi, Varanasi or get in touch to start your fitness journey.
+    </p>
+
+    <p class="font-semibold">📍 Susuwahi, Varanasi, India</p>
+    <p class="mt-2">📞 +91 98XXXXXX44</p>
+    <p class="mt-2">✉️ fabfitness@gmail.com</p>
+
+    <a href="https://wa.me/9198XXXXXX44"
+       class="inline-block mt-6 px-8 py-3 bg-neonBlue text-white rounded-full font-semibold">
+      Chat on WhatsApp
+    </a>
+  </section>
+
+
+
+
 </body>
 </html>
