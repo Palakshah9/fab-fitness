@@ -4,12 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fab Fitness | Where Fitness Meets Confidence</title>
-  <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
-
-  <!-- Tailwind Config -->
   <script>
     tailwind.config = {
       theme: {
@@ -28,66 +24,41 @@
       }
     }
   </script>
-
-  <!-- Custom CSS -->
-  <style>
-    @keyframes float {
-      0% { transform: translateY(0px); }
-      50% { transform: translateY(-10px); }
-      100% { transform: translateY(0px); }
-    }
-    .animate-float { animation: float 3s ease-in-out infinite; }
-    .text-glow-pink { text-shadow: 0 0 15px rgba(255, 0, 127, 0.6); }
-    .text-glow-blue { text-shadow: 0 0 15px rgba(0, 242, 255, 0.6); }
-    .border-glow-gold { border-color: #d4af37; box-shadow: 0 0 20px rgba(212, 175, 55, 0.3); }
-    html { scroll-behavior: smooth; }
-
-    /* Scroll fade-in animation */
-    .fade-in {
-      opacity: 0;
-      transform: translateY(30px);
-      transition: opacity 0.8s ease, transform 0.8s ease;
-    }
-    .fade-in.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  </style>
 </head>
 
 <body class="bg-white text-luxuryBlack font-sans">
 
   <!-- NAVBAR -->
-  <header class="fixed w-full z-50 bg-white/90 backdrop-blur border-b border-gray-200 shadow-md transition-all">
+  <header class="fixed w-full z-50 bg-white/90 backdrop-blur border-b border-gray-200">
     <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
       <h1 class="text-2xl font-extrabold tracking-wide">
         <span class="text-neonPink">FAB</span>
         <span class="text-neonBlue">FITNESS</span>
       </h1>
-      <a href="#contact" class="px-5 py-2 rounded-full bg-neonPink text-white font-semibold hover:bg-neonBlue transition transform hover:scale-105">
+      <a href="#contact" class="px-5 py-2 rounded-full bg-neonPink text-white font-semibold hover:bg-neonBlue transition">
         Join Gym
       </a>
     </div>
   </header>
 
   <!-- HERO -->
-  <section class="pt-32 pb-24 bg-gradient-to-br from-white to-gray-100 fade-in">
+  <section class="pt-32 pb-24 bg-gradient-to-br from-white to-gray-100">
     <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
       <div>
         <h2 class="text-5xl font-extrabold leading-tight mb-6">
           Train Strong.<br>
           Feel Confident.<br>
-          <span class="text-neonPink text-glow-pink">Live Fit.</span>
+          <span class="text-neonPink">Live Fit.</span>
         </h2>
         <p class="text-lg text-gray-600 mb-8">
           Fab Fitness is a premium yet welcoming gym in Varanasi designed for
           strength, movement, energy, and confidence — for everyone.
         </p>
-        <a href="#contact" class="inline-block px-8 py-4 rounded-full bg-neonBlue text-white font-bold hover:bg-neonPink transition transform hover:scale-105">
+        <a href="#contact" class="inline-block px-8 py-4 rounded-full bg-neonBlue text-white font-bold hover:bg-neonPink transition">
           Join the Gym
         </a>
       </div>
-      <div class="animate-float">
+      <div>
         <img src="https://images.unsplash.com/photo-1599058917212-d750089bc07b"
              alt="Gym Training"
              class="rounded-3xl shadow-2xl">
@@ -96,7 +67,7 @@
   </section>
 
   <!-- STORY -->
-  <section class="py-24 bg-white fade-in">
+  <section class="py-24 bg-white">
     <div class="max-w-5xl mx-auto px-6 text-center">
       <h3 class="text-4xl font-bold mb-6">Our Story</h3>
       <p class="text-gray-600 text-lg">
@@ -108,23 +79,23 @@
   </section>
 
   <!-- SERVICES -->
-  <section class="py-24 bg-gray-50 fade-in">
+  <section class="py-24 bg-gray-50">
     <div class="max-w-7xl mx-auto px-6">
       <h3 class="text-4xl font-bold text-center mb-16">Programs We Offer</h3>
       <div class="grid md:grid-cols-4 gap-8">
-        <div class="p-8 bg-white rounded-3xl shadow hover:shadow-xl transition transform hover:scale-105">
+        <div class="p-8 bg-white rounded-3xl shadow hover:shadow-xl transition">
           <h4 class="text-xl font-bold mb-3">Weight Training</h4>
           <p class="text-gray-600">Build strength with modern equipment and structured routines.</p>
         </div>
-        <div class="p-8 bg-white rounded-3xl shadow hover:shadow-xl transition transform hover:scale-105">
+        <div class="p-8 bg-white rounded-3xl shadow hover:shadow-xl transition">
           <h4 class="text-xl font-bold mb-3">Yoga</h4>
           <p class="text-gray-600">Improve flexibility, balance, and mental calm.</p>
         </div>
-        <div class="p-8 bg-white rounded-3xl shadow hover:shadow-xl transition transform hover:scale-105">
+        <div class="p-8 bg-white rounded-3xl shadow hover:shadow-xl transition">
           <h4 class="text-xl font-bold mb-3">Zumba</h4>
           <p class="text-gray-600">High-energy dance workouts that make fitness fun.</p>
         </div>
-        <div class="p-8 bg-white rounded-3xl shadow hover:shadow-xl transition transform hover:scale-105">
+        <div class="p-8 bg-white rounded-3xl shadow hover:shadow-xl transition">
           <h4 class="text-xl font-bold mb-3">Personal Training</h4>
           <p class="text-gray-600">Personalized coaching to help you reach your goals faster.</p>
         </div>
@@ -133,23 +104,23 @@
   </section>
 
   <!-- TESTIMONIALS -->
-  <section class="py-24 bg-white fade-in">
+  <section class="py-24 bg-white">
     <div class="max-w-6xl mx-auto px-6">
       <h3 class="text-4xl font-bold text-center mb-16">What Members Say</h3>
       <div class="grid md:grid-cols-3 gap-8">
-        <div class="p-8 border rounded-3xl shadow hover:shadow-lg transition transform hover:scale-105">
+        <div class="p-8 border rounded-3xl">
           <p class="text-gray-600 mb-4">
             “The vibe here is unmatched. I finally enjoy coming to the gym.”
           </p>
           <span class="font-bold">— Ananya S.</span>
         </div>
-        <div class="p-8 border rounded-3xl shadow hover:shadow-lg transition transform hover:scale-105">
+        <div class="p-8 border rounded-3xl">
           <p class="text-gray-600 mb-4">
             “Premium feel, friendly people, and great workouts.”
           </p>
           <span class="font-bold">— Rohit K.</span>
         </div>
-        <div class="p-8 border rounded-3xl shadow hover:shadow-lg transition transform hover:scale-105">
+        <div class="p-8 border rounded-3xl">
           <p class="text-gray-600 mb-4">
             “Fab Fitness helped me build confidence, not just muscles.”
           </p>
@@ -160,7 +131,7 @@
   </section>
 
   <!-- CONTACT -->
-  <section id="contact" class="py-24 bg-luxuryBlack text-white fade-in">
+  <section id="contact" class="py-24 bg-luxuryBlack text-white">
     <div class="max-w-5xl mx-auto px-6 text-center">
       <h3 class="text-4xl font-bold mb-6">Get in Touch</h3>
       <p class="mb-6">Susuwahi, Varanasi, India</p>
@@ -168,7 +139,7 @@
       <p class="mb-10">✉️ fabfitness@gmail.com</p>
 
       <iframe
-        class="w-full h-80 rounded-3xl border-0"
+        class="w-full h-80 rounded-3xl"
         src="https://www.google.com/maps?q=Susuwahi%20Varanasi&output=embed"
         loading="lazy">
       </iframe>
@@ -176,31 +147,9 @@
   </section>
 
   <!-- FOOTER -->
-  <footer class="py-6 bg-black text-center text-gray-400 text-sm fade-in">
+  <footer class="py-6 bg-black text-center text-gray-400 text-sm">
     © Fab Fitness — Luxury Fitness for Everyone
   </footer>
-
-  <!-- Scroll-based fade-in script -->
-  <script>
-    const faders = document.querySelectorAll('.fade-in');
-
-    const appearOptions = {
-      threshold: 0.1
-    };
-
-    const appearOnScroll = new IntersectionObserver(function(entries, observer){
-      entries.forEach(entry => {
-        if(entry.isIntersecting){
-          entry.target.classList.add('visible');
-          observer.unobserve(entry.target);
-        }
-      });
-    }, appearOptions);
-
-    faders.forEach(fader => {
-      appearOnScroll.observe(fader);
-    });
-  </script>
 
 </body>
 </html>
