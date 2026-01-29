@@ -1,9 +1,0 @@
-
-{
-  "name": "Fab Fitness - Luxury Gym & Wellness",
-  "description": "A high-end, modern fitness website for Fab Fitness, Varanasi. Featuring AI-powered fitness consulting, membership plans, and premium training services.",
-  "requestFramePermissions": [
-    "camera",
-    "microphone"
-  ]
-}
